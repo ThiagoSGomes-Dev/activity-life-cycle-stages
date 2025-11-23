@@ -1,12 +1,10 @@
 package br.com.statelab
 
 import android.content.Context
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
 import br.com.statelab.databinding.BottomSheetdialogFragmentBinding
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
@@ -24,7 +22,7 @@ class BottomSheetDialogFragment: BottomSheetDialogFragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = BottomSheetdialogFragmentBinding.inflate(
             inflater,
             container,

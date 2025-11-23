@@ -78,11 +78,11 @@ class MainActivity : AppCompatActivity(), OnButtonClickedListener {
         }
 
         binding.btnClick.setOnClickListener {
-            BottomSheetDialogFragment().show(supportFragmentManager, "confirme_bottom_sheet_fragment")
-
+            // BottomSheetDialogFragment().show(supportFragmentManager, "confirme_bottom_sheet_fragment")
+            
             // Intent explícita
-//            val intent = Intent(this, Details::class.java)
-//            startActivity(intent)
+            val intent = Intent(this, Details::class.java)
+            startActivity(intent)
         }
 
 
@@ -101,7 +101,7 @@ class MainActivity : AppCompatActivity(), OnButtonClickedListener {
         // Intent implícita
         // startActivity(Intent(ACTION_VIEW, Uri.parse("https://google.com")))
 
-        val text = "Confira meu app"
+        val text = "Confira o Logcat..."
         val intent = Intent(Intent.ACTION_SEND).apply {
             type = "text/plain"
             putExtra(Intent.EXTRA_TEXT, text)

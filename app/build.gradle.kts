@@ -7,6 +7,12 @@ android {
     namespace = "br.com.statelab"
     compileSdk = 36
 
+    packaging {
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1,LICENSE.md,LICENCE-notice.md}"
+        }
+    }
+
     defaultConfig {
         applicationId = "br.com.statelab"
         minSdk = 24

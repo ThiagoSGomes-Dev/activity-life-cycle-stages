@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">StateLab</string>
+    <string name="mainactivity_screen">MainActivity screen</string>
 </resources>
